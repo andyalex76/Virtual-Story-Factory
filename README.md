@@ -1,11 +1,32 @@
-<div align="center">
+# Virtual Story Factory 2.3
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Интеллектуальная мультиагентная платформа для автоматизированного написания и публикации литературных произведений на базе Google Gemini.
 
-  <h1>Built with AI Studio</h2>
+> Подробное техническое и функциональное описание проекта доступно в файле [PROJECT_DESCRIPTION.md](./PROJECT_DESCRIPTION.md).
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+---
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Краткий обзор
 
-</div>
+* **Мультиагентный воркфлоу:** Главный Редактор, Писатель, Литературный Критик, Креативный Дизайнер и Режиссер (Пользователь).
+* **Модели:** `gemini-3-pro-preview` (высокохудожественный текст) и `gemini-3-flash-preview` (структура, аудит и маркетинг).
+* **Конвейер:** INIT → BRIEF (Story Bible) → WRITING → CRITIQUE (с циклом доработки) → RELEASE (компиляция чистой рукописи `{BOOK_NAME}.md` и маркетинговый пакет).
+* **Особенности:**
+  * Система версионирования глав с возможностью отката (Rollback).
+  * Smart Context Filter и Narrative Bridge для оптимизации расхода токенов.
+  * Память проекта (Asset Library) с категоризацией материалов.
+  * Режим комфортного чтения книги (Reader View) с боковым оглавлением.
+  * Экспорт и импорт всего проекта в JSON.
+
+## Быстрый старт
+
+```bash
+# Установка зависимостей
+npm install
+
+# Запуск dev-сервера
+npm run dev
+
+# Сборка проекта
+npm run build
+```

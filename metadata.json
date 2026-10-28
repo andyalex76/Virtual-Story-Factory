@@ -1,0 +1,5 @@
+{
+  "name": "Virtual Story Factory_2.3",
+  "description": "An AI-powered orchestrator-worker platform for automated story production. Features a command center, multimodal asset management, and a multi-agent workflow (Editor, Writer, Designer, Reader).",
+  "requestFramePermissions": []
+}
